@@ -1,0 +1,91 @@
+<html>	
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mrzim trcanje web page</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="/static/js/authors.js"></script>
+    <script src="/static/js/submit_comment.js"></script>
+</head>
+<body>
+<h1 class="naslov"><a href="">MrzimTrcanje.com</a></h1>
+<div class="buttonholder">
+	<div class="button1" style="float: left;">
+		<button type="button" class="btn btn-primary">Mrzim trčanje - home page</button>
+	</div>
+	<div class="button2" style="float: right;">
+		<button type="button" class="btn btn-primary">Stariji postovi</button>
+		<button type="button" class="btn btn-primary">Galerije</button>
+  		<button type="button" class="btn btn-primary">Kontakti</button>
+  		<button type="button" class="btn btn-primary">Linkovi</button>
+	</div>
+</div>
+<div id="nav">
+O autorima:<br>
+<button class="btn btn-info btn-xs aboutDomi" style="margin: 20px;">Domi</button><br>
+<p class="about-Domi" hidden>
+NOGOMETAŠI Bešiktaša, koje trenira bivši hrvatski izbornik Slaven Bilić, ostali su i bez teoretskih izgleda za osvajanje naslova prvaka Turske nakon 0:1 domaćeg poraza od Konyaspora u susretu 32. kola.
+ 
+"Žao mi je zbog igrača i navijača. Imali smo prilično dobru sezonu sve do zadnjih desetak dana. Ovi nas zadnji propusti bole, tim više što smo i protiv Konyaspora imali svoje šanse. Razočaran sam. Moja je namjera bila ostati u klubu, ali sada više nisam siguran hoće li to biti moguće. Ja sam odgovoran za poraze te ću sjesti s upravom. Znam kako nogomet funkcionira, pogotovo u Turskoj, i mislim da neću dobiti priliku voditi Bešiktaš u narednoj sezoni", nakon poraza izjavio je bivši hrvatski izbornik te je na taj način otvorio prostor mnogobrojnim medijskim špekulacijama.
+ 
+Bilića mediji već neko vrijeme sele na Otok, točnije u West Ham, čije je boje branio kao igrač, a i sam Slaven nikad nije poricao da mu je životna želja trenirati klub u Premiershipu.
+ 
+Oko statusa Slavena Bilića u Bešiktašu, eventualnim namještanjima u posljednjim kolima u Turskoj te o večerašnjem finalu Kupa između Dinama i Splita razgovarali smo s bivšim vratarom ''Crvenih'' Andrijom Vukovićem, koji sad brani boje turskog  Balıkesirspora.
+</p>
+<button class="btn btn-info btn-xs aboutDaco" style="margin: 20px;">Dačo</button><br>
+<p class="about-Daco" hidden>DAčo je šupak</p>
+<button class="btn btn-info btn-xs aboutMikro" style="margin: 20px;">Mikro</button><br>
+<p class="about-Mikro" hidden>Mikro je šupak</p>
+</div>
+
+<div id="section">
+<h1>{{ title }}</h1>
+{% for line in text %}
+    {{ line|safe }}
+{% endfor %}
+<br>
+<div class="form-group">
+    <input type="text" id="text1" class="form-control" placeholder="Ime ili nadimak"><br><br>
+</div>
+<div class="form-group">
+    <textarea id="text2" cols="40" rows="5" class="form-control" placeholder="Komentar"></textarea><br><br>
+</div>
+<button id="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+</div>
+<div id="sponzori">
+<h1>O stranici:</h1><br>
+<p>
+NOGOMETAŠI Bešiktaša, koje trenira bivši hrvatski izbornik Slaven Bilić, ostali su i bez teoretskih izgleda za osvajanje naslova prvaka Turske nakon 0:1 domaćeg poraza od Konyaspora u susretu 32. kola.
+
+"Žao mi je zbog igrača i navijača. Imali smo prilično dobru sezonu sve do zadnjih desetak dana. Ovi nas zadnji propusti bole, tim više što smo i protiv Konyaspora imali svoje šanse. Razočaran sam. Moja je namjera bila ostati u klubu, ali sada više nisam siguran hoće li to biti moguće. Ja sam odgovoran za poraze te ću sjesti s upravom. Znam kako nogomet funkcionira, pogotovo u Turskoj, i mislim da neću dobiti priliku voditi Bešiktaš u narednoj sezoni", nakon poraza izjavio je bivši hrvatski izbornik te je na taj način otvorio prostor mnogobrojnim medijskim špekulacijama.
+
+Bilića mediji već neko vrijeme sele na Otok, točnije u West Ham, čije je boje branio kao igrač, a i sam Slaven nikad nije poricao da mu je životna želja trenirati klub u Premiershipu.
+
+Oko statusa Slavena Bilića u Bešiktašu, eventualnim namještanjima u posljednjim kolima u Turskoj te o večerašnjem finalu Kupa između Dinama i Splita razgovarali smo s bivšim vratarom ''Crvenih'' Andrijom Vukovićem, koji sad brani boje turskog  Balıkesirspora.
+
+''Šteta, i teoretski smo ispali iz lige, makar smo u nekoliko posljednjih kola pobjeđivali. Međutim, koštao nas je očajan prvi dio sezone. Ipak, oduševljen sam sezonom. Turska liga  ''Amerika'' je za našu, a Balıkesirspor, premda je mali klub za turske prilike, Real je za 90 posto hrvatskih klubova. Od infrastrukture, logistike, potpore navijača, sve je na najvišem mogućem nivou. Presretan sam što sam produžio ugovor i za sljedeću sezonu'', odmah na početku nam je rekao Vuković, a onda je iznio mišljenje o turskoj avanturi Slavena Bilića:
+
+''Ne znam što bih rekao. Žao mi je što su izgubili naslov u samom fotofinišu. Cijelu sezonu Bešiktaš je igrao fantastično. Bili su prvi gotovo cijelo prvenstvo i šteta je što su sve prosuli u posljednja tri kola. Međutim, takva je turska liga, svatko svakoga može pobijediti. Mislim da je Bešiktašu najveći hendikep bio što su svako kolo igrali u gostima. Naime, kako grade novi stadion već više od godinu dana igraju domaće utakmice u Ankari, a užasno je teško pobjeđivati bez prave potpore navijača. Nekoliko utakmica odigrali su na olimpijskom stadionu u Istanbulu, no to je golemo zdanje za preko 100 tisuća ljudi i odustali su od njega.
+
+Premda još ne znam dobro turski jezik, vidim da Slavena ljudi ovdje obožavaju. U cijeloj je Turskoj jako cijenjen, a za navijače Bešiktaša ima status božanstva. Oni mu se pod noge bacaju. Međutim, čudni su ljudi ovdje. Pomalo me sve ovo podsjeća na Dalmaciju. Jedan dan te smatraju bogom, a već drugi te tjeraju i vrijeđaju. Iskreno, ne bih volio da ode, ali mislim da bi za njega bilo puno bolje da ode u Englesku. Dok Slaven nije preuzeo Bešiktaš, godinama su tavorili u prosječnosti turskog nogometa, on ih je doveo na prag osvajanja prvenstva, izbacili su iz Europe jedan Liverpool, i umjesto da mu budu zahvalni, oni ga tjeraju. Sumnjam da Bešiktaš može dovesti boljeg trenera od Bilića.''
+
+Turski mediji posljednjih dana bruje o mogućem namještanju utakmice između Galatasaraya i Genclerbirligija. Galata je golom Wesleya Sneijdera slavio 1:0, a sumnju u regularnost utakmice potakla je čudna reakcija vratara Genclerbirligija kod pogotka.
+
+''Nevjerojatna se prašina podigla u Turskoj oko te utakmice. Međutim, uvjeren sam da su sve to prenapuhali mediji bliski Feneru i Bešiktašu. Jako dobro poznajem Kaplana, vratara Genclerbirligija i uvjeren sam da je sve bilo čisto. Istina, na prvi pogled reakcija mu je bila malo čudna, no ne želim vjerovati da je namjerno pustio gol. Iskreno, čudnija mi je bila ona situacija kod namještanja ofsajda. No, ne znam što da mislim. Jučer je Galatasaray prošao u finale Kupa. Iako su gubili 2:0 od Sivasspora,  u posljednjim trenucima susreta sudac im je poklonio penal i prošli su. Galata je velik klub, a ovo je Turska.''
+
+Večeras na Maksimiru vaš bivši klub ima povijesnu priliku doći do prvog velikog trofeja u klupskoj povijesti. Pratite li hrvatski nogomet sad kad ste u Turskoj?
+
+''Kako ne. Suigrač u Balıkesirsporu mi je Tomislav Glumac, također bivši igrač Splita. Imamo ovdje sve hrvatske kanale koji prenose HNL i u tijeku smo, sve pratimo kad možemo. Što se tiče finala, premda bih jako volio da Split pobijedi, mislim da su šanse za tako nešto gotovo nikakve. Prevelika je razlika u kvaliteti i mislim da Split ima šansu jedino ako svi igrači odigraju utakmicu života, ako Zagorac sve živo obrani, a Dinamo podbaci.
+
+Mislim da se kvaliteta Splita pomalo precjenjuje. Premda smo u Europi prošlo ljeto daleko dogurali i premda smo bili na pragu izbacivanja velikog Torina, mislim da je prava slika nešto drugačija. Nemojmo se zavaravati, imali smo više sreće nego pameti i neke utakmice smo dobili isključivo na moje obrane. A vidite i da je danas Split na dnu ljestvice. Imaju sreće što je prvenstvo pri kraju. U kakvoj su formi, kako igraju, još bi ispali iz lige. Od početka sezone nešto opasno ne štima. Ipak, volio bih da Split sve iznenadi, da osvoji Kup, a najviše zbog Zorana Vulića, koji je fantastičan trener i još bolji čovjek.''
+</p>
+</div>
+<div id="footer">
+Copyright © MrzimTrcanje.com
+</div>
+</body>
+</html>

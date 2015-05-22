@@ -1,0 +1,67 @@
+.button1 {
+	margin: 30px;
+	text-align: left;
+}
+
+.button2 {
+	text-align: right;
+	margin: 30px;
+}
+
+.buttonholder {
+	margin: 20px;
+	overflow: hidden;
+	background: #eceeed;
+}
+
+.naslov {
+	margin: 20px;
+}
+
+a:hover {
+	color:green;
+	text-decoration: none;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1100px;
+    width:200px;
+    float:left;
+    padding:5px;
+    overflow: auto; 
+}
+#section {
+    width:800px;
+    float:left;
+    padding:40px; 
+    height: 1100px;
+    overflow: auto;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+#sponzori {
+	overflow: auto;
+	padding: 40px;
+	height: 680px;
+}
+
+.about-Domi, .about-Daco, .about-Mikro {
+	padding: 20px;
+}
+
+.text1 {
+    width: 35%;
+}
+
+.text2 {
+    width: 50%;
+    height: 30%;
+}
